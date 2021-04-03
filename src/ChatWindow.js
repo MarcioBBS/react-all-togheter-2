@@ -10,9 +10,8 @@ class ChatWindow extends Component {
     this.props.addNewMessage(this.props.user, message);
   };
 
-  render() {
-    const user = this.props.user;    
-    const messages = this.props.messages;
+  render() {    
+    const {user, messages} = this.props
     
   	return (
     	 <div className="chat-window">

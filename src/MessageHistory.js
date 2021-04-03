@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 class MessageHistory extends Component {
 
-  render() {
-    const messages = this.props.messages;
-    const user = this.props.user
+  render() {   
+    const {user, messages} = this.props;
     
   	return(
     	 <ul className="message-list">
