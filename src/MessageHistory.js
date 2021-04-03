@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class MessageHistory extends Component {
 
@@ -21,6 +22,11 @@ class MessageHistory extends Component {
          </ul>
     );
   }
+}
+
+MessageHistory.propTypes = {
+  messages: PropTypes.array.isRequired,
+  user: PropTypes.string.isRequired
 }
 
 export default MessageHistory;

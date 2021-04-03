@@ -33,11 +33,11 @@ class App extends Component {
         </header>
         <div className="container">
          
-	    {/*Amy*/}
-		 <ChatWindow key= {users[0].username} user= {users[0].username} messages= {this.state.messages} addNewMessage= {this.addNewMessage} />
-		 
-		{/*John*/}
-         <ChatWindow key= {users[1].username} user= {users[1].username} messages= {this.state.messages} addNewMessage= {this.addNewMessage} />
+        {/*Amy*/}
+        <ChatWindow key= {users[0].username} user= {users[0].username} messages= {this.state.messages} addNewMessage= {this.addNewMessage} />
+        
+        {/*John*/}
+        <ChatWindow key= {users[1].username} user= {users[1].username} messages= {this.state.messages} addNewMessage= {this.addNewMessage} />
 
         </div>
       </div>
