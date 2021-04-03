@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class MessageHistory extends Component {
-
-  render() {   
-    const {user, messages} = this.props;
-    
+const MessageHistory = props => {
+  const {user, messages} = props;
+    console.log('ASFD');
   	return(
     	 <ul className="message-list">
             {messages.map((message, index) => (
@@ -20,7 +18,6 @@ class MessageHistory extends Component {
             ))}
          </ul>
     );
-  }
 }
 
 MessageHistory.propTypes = {
